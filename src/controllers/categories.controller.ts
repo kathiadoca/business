@@ -1,3 +1,4 @@
+import {authenticate} from '@loopback/authentication';
 import {service} from '@loopback/core';
 import {
   Count,
@@ -21,6 +22,7 @@ import {Categories} from '../models';
 import {CategoriesRepository} from '../repositories';
 import {CategoriesService} from '../services';
 
+@authenticate('jwt')
 export class CategoriesController {
   constructor(
     @repository(CategoriesRepository)

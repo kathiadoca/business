@@ -22,6 +22,13 @@ import {Products} from '../models';
 import {ProductsRepository} from '../repositories';
 import {ProductsService} from '../services';
 
+/**
+ *  @description Archivo controlador responsable de manejar las solicitudes entrantes que llegan a un end point.
+ *  En este caso seran posible acceder por medio de metodos http
+ *
+ *  @author Luis Torres
+ *
+ */
 @authenticate('jwt')
 export class ProductsController {
   constructor(
@@ -30,6 +37,12 @@ export class ProductsController {
     @service() public productsService: ProductsService,
   ) {}
 
+  /**
+   *  @description Metodo que permite la creacion de los productos
+   *
+   *  @author Luis Torres
+   *
+   */
   @post('/products')
   @response(200, {
     description: 'Products model instance',
@@ -98,8 +111,9 @@ export class ProductsController {
   @response(204, {
     description: 'Products DELETE success',
   })
-  async deleteById(@param.path.number('id') id: number): Promise<void> {
+  async deleteById(@param.path.number('id') id: number): Promise<object> {
     await this.productsRepository.deleteById(id);
+    return {message: 'eliminated product', statusCode: 200};
   }
 
   @get('/products/company/{id}')

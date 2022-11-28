@@ -28,6 +28,12 @@ export class ProductsService {
     }
   }
 
+  /**
+   *  @description Metodo que permite obtener los productos de la base de datos y filtar por las categorias activas para restornarlas al controlador.
+   *
+   *  @author Luis Torres
+   *
+   */
   async getProducts(id: number): Promise<object> {
     try {
       const resjoin = await this.categoriesRepository.execute(

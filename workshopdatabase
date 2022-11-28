@@ -1,14 +1,16 @@
 {
   "ids": {
-    "User": 2,
-    "UserCredentials": 2
+    "User": 3,
+    "UserCredentials": 3
   },
   "models": {
     "User": {
-      "b5388697-31d2-4423-b474-0a8171e3bf55": "{\"id\":\"b5388697-31d2-4423-b474-0a8171e3bf55\",\"email\":\"testuser2@abc.com\"}"
+      "b5388697-31d2-4423-b474-0a8171e3bf55": "{\"id\":\"b5388697-31d2-4423-b474-0a8171e3bf55\",\"email\":\"testuser2@abc.com\"}",
+      "acbe2cdc-3f33-4373-aec1-92567a12ec56": "{\"id\":\"acbe2cdc-3f33-4373-aec1-92567a12ec56\",\"email\":\"tienda1@gmail.com\"}"
     },
     "UserCredentials": {
-      "a4f73ed3-d0b7-4517-879b-c3cb150b71e1": "{\"id\":\"a4f73ed3-d0b7-4517-879b-c3cb150b71e1\",\"password\":\"$2a$10$q4RrcJHFq5vHr0dFDXDGgev7k7y7Ya2N3O6EXNwWuzz47W4j2Nbc2\",\"userId\":\"b5388697-31d2-4423-b474-0a8171e3bf55\"}"
+      "a4f73ed3-d0b7-4517-879b-c3cb150b71e1": "{\"id\":\"a4f73ed3-d0b7-4517-879b-c3cb150b71e1\",\"password\":\"$2a$10$q4RrcJHFq5vHr0dFDXDGgev7k7y7Ya2N3O6EXNwWuzz47W4j2Nbc2\",\"userId\":\"b5388697-31d2-4423-b474-0a8171e3bf55\"}",
+      "61e0c2fc-5eb5-4a4c-bc8e-e8aae3670fea": "{\"id\":\"61e0c2fc-5eb5-4a4c-bc8e-e8aae3670fea\",\"password\":\"$2a$10$/W9FQqBMjN091xSFTAvIle2HqYgb5jjhfJ6Ddx/i2Gyx7Qu9zAzZ.\",\"userId\":\"acbe2cdc-3f33-4373-aec1-92567a12ec56\"}"
     }
   }
 }
